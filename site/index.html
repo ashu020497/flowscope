@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flowscope — where money is moving</title>
+<meta name="description" content="A daily read of where capital is moving across asset classes and regions, built from public data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('fs-theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="demo" class="demo" hidden>Demo mode — simulated numbers, not real market data.</div>
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand-nav">
+      <a class="brand" href="#flows">Flowscope</a>
+      <nav aria-label="Sections" class="nav">
+        <a href="#flows" data-nav="flows">Flows</a>
+        <a href="#assets" data-nav="assets">Assets</a>
+        <a href="#map" data-nav="map">Driver map</a>
+        <a href="#shock" data-nav="shock">Shock</a>
+        <a href="#cash" data-nav="cash">Cash &amp; liquidity</a>
+        <a href="#sources" data-nav="sources">Sources</a>
+      </nav>
+    </div>
+    <div class="top-tools">
+      <span id="fresh" class="fresh"></span>
+      <button id="theme" class="btn-line" type="button">Light</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap"><p class="loading">Loading the latest data…</p></main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand">Flowscope</span>
+    <span class="foot-src">NSDL · NSE · AMFI · NSE Indices · ICI · Federal Reserve (FRED) · CFTC · Japan MOF · Farside · Yahoo Finance · multpl</span>
+    <span class="foot-note">Information only, not investment advice. Each figure links to its source on the Sources page.</span>
+  </div>
+</footer>
+<div id="tip" class="tip" role="status" aria-live="polite" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
